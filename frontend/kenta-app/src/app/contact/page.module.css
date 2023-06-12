@@ -1,0 +1,52 @@
+.container {
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.imgContainer {
+  flex: 1;
+  height: 500px;
+  position: relative;
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title{
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 60px;
+}
+
+.input, .textArea {
+  background-color: transparent;
+  border: none;
+  padding: 20px;
+  outline: none;
+  color: #bbb;
+  border: 3px solid #bbb;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.img{
+  object-fit: contain;
+  animation: move 3s infinite ease alternate;
+}
+
+@keyframes move{
+  from{
+    transform: translateY(-15px);
+  }
+  to{
+    transform: translateY(0px) scale(1.04);
+  }
+}
